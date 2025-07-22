@@ -44,6 +44,8 @@ body {
 /* Navigation Section */
 nav {
   /* border: 2px solid white; */
+  /* background-color: #617174; */
+  background-color: #1b3c53;
   text-align: center;
   padding: 30px 0px;
   position: sticky;
@@ -55,9 +57,10 @@ a {
   margin: 10px;
   padding: 8px;
   border-radius: 8px;
-  background-color: #dccfa7;
-  color: black;
+  /* background-color: #dccfa7; */
+  color: #dccfa7;
   text-decoration: none;
+  border: none;
 }
 
 /* font and color of our menu,aboutus,contactus and footer */
@@ -138,6 +141,10 @@ a {
   border: none;
   background-color: #dccfa7;
   cursor: pointer;
+}
+.card img:hover {
+  z-index: 1;
+  transform: scale(0.9);
 }
 
 /* About us */
@@ -247,20 +254,21 @@ form div {
   cursor: pointer;
 }
 footer {
-  display: flex;
+  background-color: #1b3c53;
+  display: inline-flex;
   flex-direction: row;
   justify-content: space-between;
   padding: 20px 10px;
-  position: sticky;
+  /* position: sticky; */
   bottom: 0;
 }
 .me-10 {
-  margin-right: 10px;
+  margin-right: 20px;
 }
-/* .to-top{
-    border: 2px solid black;
-    color: #dccfa7;
-} */
+.to-top {
+  /* border: 2px solid black; */
+  color: #dccfa7;
+}
 
 footer a {
   position: fixed;
