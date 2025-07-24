@@ -13,13 +13,15 @@ body {
 
 /* hearder Section */
 #header {
+  height: 500px;
   border: 2px solid white;
   padding: 50px 0;
   text-align: center;
   text-transform: capitalize;
-  background-image: url(images/coffee-beans-levitate-white-background.jpg);
+  /* background-image: url(images/coffee-beans-levitate-white-background.jpg); */
+  background-image: url(images/coffee-beans-top-view-white-background-space-text.jpg);
   background-repeat: repeat;
-  background-size: cover;
+  background-size: contain;
   background-position: center;
   color: black;
 }
@@ -27,6 +29,7 @@ body {
 #header h1 {
   font-family: "Winky Rough", sans-serif;
   font-size: 3rem;
+  margin-top: 107px;
 }
 #header p {
   font-family: "Roboto Mono", monospace;
@@ -34,11 +37,13 @@ body {
 }
 #header button {
   width: 200px;
-  height: 35px;
+  height: 40px;
   border: none;
   border-radius: 8px;
   cursor: pointer;
   background-color: #dccfa7;
+  color: white;
+
 }
 
 /* Navigation Section */
@@ -50,6 +55,7 @@ nav {
   padding: 30px 0px;
   position: sticky;
   top: 0;
+  z-index: 10;
 }
 a {
   font-family: "Winky Rough", sans-serif;
@@ -62,13 +68,15 @@ a {
   text-decoration: none;
   border: none;
 }
+.me-5 {
+  margin-right: 5px;
+}
 
 /* font and color of our menu,aboutus,contactus and footer */
 
 #our-menu,
 #about-us,
-#contact-us,
-#footer {
+#contact-us {
   width: 90%;
   margin: 10px auto;
 }
@@ -92,24 +100,25 @@ a {
   text-align: left;
   margin-bottom: 20px;
 }
-.container {
+.card-container {
   margin: 50px 0;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  gap: 50px;
+  gap: 20px;
   flex-wrap: wrap;
 }
 .card {
   border: 2px solid #dccfa7;
-  width: 200px;
-  margin: 10px auto;
+  width: 250px;
+  /* margin: 10px auto; */
   border-radius: 10px;
+  overflow: hidden;
 }
 .card-img-top {
   /* border: 2px solid white; */
   max-width: 100%;
-  height: 150px;
+  /* height: 150px; */
   border-radius: 9px 9px 0px 0px;
 }
 .card-body {
@@ -120,6 +129,7 @@ a {
   padding: 10px 0;
 }
 .card-body .card-text {
+  font-family: "Roboto Mono", monospace;
   text-transform: capitalize;
   line-height: 1.5;
   margin-bottom: 10px;
@@ -135,16 +145,17 @@ a {
   font-style: italic;
 }
 .btn {
-  width: 100px;
+  width: 100%;
   height: 40px;
   border-radius: 5px;
   border: none;
   background-color: #dccfa7;
   cursor: pointer;
 }
-.card img:hover {
+.card .card-img-top:hover {
   z-index: 1;
-  transform: scale(0.9);
+  transform: scale(1.2);
+  transition: 1s;
 }
 
 /* About us */
@@ -154,6 +165,7 @@ a {
 #footer p {
   font-family: "Roboto Mono", monospace;
   line-height: 1.5rem;
+  padding: 5px 0;
 }
 .gallery {
   position: relative;
@@ -221,10 +233,12 @@ a {
 #contact-us {
   /* border: 2px solid red; */
   padding-top: 20px;
+  padding-bottom: 20px;
   font-family: "Roboto Mono", monospace;
   padding: 10px;
 }
 #contact us h2 {
+  padding-bottom: 20px;
   margin-bottom: 20px;
 }
 form div {
@@ -239,10 +253,11 @@ form div {
   margin-right: 10px;
 }
 .form-control {
-  width: 250px;
-  background-color: #dccfa7;
+  width: 350px;
+  background-color: transparent;
   outline: none;
-  border-bottom: 1px solid black;
+  border: none;
+  border-bottom: 2px solid white;
 }
 .btn-submit {
   margin-left: 190px;
@@ -255,7 +270,7 @@ form div {
 }
 footer {
   background-color: #1b3c53;
-  display: inline-flex;
+  display: flex;
   flex-direction: row;
   justify-content: space-between;
   padding: 20px 10px;
@@ -273,7 +288,7 @@ footer {
 footer a {
   position: fixed;
   right: 20px;
-  bottom: 20px;
+  bottom: 70px;
   /* background-color: #617174; */
   border: none;
   /* color: #dccfa7; */
